@@ -25,3 +25,10 @@
 #container a {
   text-decoration: none;
 }
+#banner{
+  background-color: rgba($color: #d41313d8, $alpha: 0.4);
+  justify-content: center;
+}
+ion-content{
+  --background: url('../../assets/background.png') 0 0/100% 100% no-repeat;
+}
