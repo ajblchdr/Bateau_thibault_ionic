@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-content padding>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div>
+      <h1>Le bateau Thibault</h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+      <p>Vente en direct de notre bateau Produits selon la saison, Livraisons sur paris</p>
+      <p> 06.00.00.00.00</p>
+      <p>bateauthibault@gmail.com</p>
+      <p>www.facebook.com/lebateauthibault</p>
+    </div>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+                <ion-button expand="full" ><ion-img [src]="../../assets/poisson.png"></ion-img> et promotions</ion-button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              <ion-button expand="full" ><img class="buttonIcon" src="../../assets/ancre.png"><ion-label>Bateaux</ion-label></ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand="full" ><img class="buttonIcon" src="../../assets/restaurant.png"><ion-label>Restaurants</ion-label></ion-button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row >
+            <ion-col>
+              <ion-button  expand="full" ><img class="buttonIcon" src="../../assets/recette.png">Recettes</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button  expand="full" ><img class="buttonIcon" src="../../assets/tourteau.png">Contact</ion-button>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+
+  </ion-content>
+</ion-app>
