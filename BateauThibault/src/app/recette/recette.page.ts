@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { recettes } from '../../data.json/recette';
 import { NavigationExtras , Router} from '@angular/router';
 
 @Component({

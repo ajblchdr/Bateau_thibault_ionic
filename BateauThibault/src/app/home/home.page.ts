@@ -18,4 +18,12 @@ export class HomePage {
   onGoToRecette(){
     this.router.navigate(['/recette'])
   }
+
+  onGoToRestaurantsList(){
+    this.router.navigate(['/restaurant-list'])
+  }
+
+  onGoToBateauxList(){
+    this.router.navigate(['/bateau-list'])
+  }
 }

@@ -1,0 +1,12 @@
+<ion-content padding>
+
+  <h1>Les bateaux</h1>
+
+  <ion-card *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)" color="primary">
+    <ion-img src="{{bateau.img + '_icon.png'}}"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ bateau.name }}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

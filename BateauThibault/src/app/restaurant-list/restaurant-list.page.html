@@ -1,0 +1,12 @@
+<ion-content padding>
+
+  <h1>Les restaurants</h1>
+
+  <ion-card *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)" color="primary">
+    <ion-img src="{{restaurant.img + '_icon.png'}}"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ restaurant.name }}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

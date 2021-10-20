@@ -18,7 +18,23 @@ const routes: Routes = [
   {
     path: 'recette',
     loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
+  },  {
+    path: 'restaurant-list',
+    loadChildren: () => import('./restaurant-list/restaurant-list.module').then( m => m.RestaurantListPageModule)
   },
+  {
+    path: 'restaurant-detail',
+    loadChildren: () => import('./restaurant-detail/restaurant-detail.module').then( m => m.RestaurantDetailPageModule)
+  },
+  {
+    path: 'bateau-list',
+    loadChildren: () => import('./bateau-list/bateau-list.module').then( m => m.BateauListPageModule)
+  },
+  {
+    path: 'bateau-detail',
+    loadChildren: () => import('./bateau-detail/bateau-detail.module').then( m => m.BateauDetailPageModule)
+  },
+
 ];
 
 @NgModule({

@@ -27,11 +27,11 @@
        <ion-grid>
           <ion-row>
             <ion-col align-self-center>
-              <ion-button [routerLink]="['/']" expand="block" color="medium">
+              <ion-button (click)="onGoToBateauxList()" expand="block" color="medium">
                 <img  id ="menu-img" src="../../assets/ancre3x.png"> Bateaux </ion-button>
           </ion-col>
           <ion-col>
-            <ion-button [routerLink]="['/']" expand="block" color="medium">
+            <ion-button (click)="onGoToRestaurantsList()" expand="block" color="medium">
               <img  id ="menu-img" src="../../assets/restaurant.png"> restaurant </ion-button>
           </ion-col>  
         </ion-row>        
