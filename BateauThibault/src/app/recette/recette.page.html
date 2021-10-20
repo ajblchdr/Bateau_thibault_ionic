@@ -1,0 +1,33 @@
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button  [routerLink]="['/']" expand="block" color="medium"><img  id ="menu-img" src="../../assets/homardRecette_icon3x.png"> Homard </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button [routerLink]="['/']" expand="block" color="medium"><img  id ="menu-img" src="../../assets/saintJacques.png"> St.jacques </ion-button>
+    </ion-col>  
+  </ion-row>        
+</ion-grid>
+
+
+<ion-row >
+  <ion-col>
+    <ion-button (click)="onGoToRecette()" expand="block" color="medium"><img  id ="menu-img" src="../../assets/barRecette_icon3x.png">  </ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-button (click)="onGoToContact()" expand="block" color="medium"><img  id ="menu-img" src="../../assets/poulpe3x.png"> Contact </ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row >
+  <ion-col>
+    <ion-button (click)="onGoToRecette()" expand="block" color="medium"><img  id ="menu-img" src="../../assets/poulpe3x.png"> Recette </ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-button (click)="onGoToContact()" expand="block" color="medium"><img  id ="menu-img" src="../../assets/poulpe3x.png"> Contact </ion-button>
+  </ion-col>
+</ion-row>
+
+</ion-content>

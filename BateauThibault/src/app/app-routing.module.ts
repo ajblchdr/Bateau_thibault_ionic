@@ -10,10 +10,20 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'accueil',
     loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
   },
+  {
+    path: 'information-gerant',
+    loadChildren: () => import('./information-gerant/information-gerant.module').then( m => m.InformationGerantPageModule)
+  },
+  {
+    path: 'recette',
+    loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
+  },
+];
 
 ];
 
