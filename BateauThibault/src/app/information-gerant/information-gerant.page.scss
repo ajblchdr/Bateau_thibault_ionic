@@ -1,0 +1,26 @@
+ion-content {
+    --background: url(../../assets/background.png) no-repeat center/cover fixed;
+  }
+  h3 {
+    font-family:Luminarie !important;
+    font-style: italic;
+    font-size:2em;
+    color: white;
+  }
+  #menu-img-gerant{
+    width: 200px;
+	height: 200px;
+  }
+  #des{
+      margin-bottom: 100px;
+  }
+  #desc{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 15em;
+
+  }
+  p{
+      margin-bottom: -1em;
+  }
