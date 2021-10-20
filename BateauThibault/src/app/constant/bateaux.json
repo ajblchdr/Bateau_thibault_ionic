@@ -1,0 +1,25 @@
+{
+    "bateaux":[
+    {
+        "id":1,
+        "titre": "De la Brise",
+        "date": "12/07/2001"
+    },
+    {
+        "id":2,
+        "titre": "Saphir",
+        "date": "12/07/1998"
+    },
+    {
+        "id":3,
+        "titre": "Gast Micher",
+        "date": "05/03/1975"
+    },
+    {
+        "id":4,
+        "titre": "Aquilon",
+        "date": "12/07/2001"
+    }
+],
+"description":"Qu'il est chaud le soleil - Quand nous sommes en vacances - Y a d' la joie, des hirondelles - C'est le sud de la France - Papa bricole au garage - Maman lit da!ns la chaise longue - Dans ce joli paysage - Moi, je me balade en tongs - Que de bonheur! - Que de bonheur"
+}

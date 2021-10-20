@@ -16,6 +16,10 @@ export class HomePage {
   }
 
   onGoToRecette(){
-    this.router.navigate(['/recette'])
+    this.router.navigate(['/recette']);
+  }
+  onGoToProduit(){
+    console.log("WESH MARCHE")
+    this.router.navigate(['/produit']);
   }
 }

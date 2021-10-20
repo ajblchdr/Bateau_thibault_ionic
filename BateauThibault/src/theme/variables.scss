@@ -3,6 +3,11 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  ion-card{
+    --ion-background-color : rgba(37, 37, 66, 0.455);
+  }
+  
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -231,6 +236,6 @@
 
     --ion-tab-bar-background: #1f1f1f;
 
-    --ion-card-background: #1e1e1e;
+    --ion-card-background: rgba(0, 0, 255, 0.3);
   }
 }

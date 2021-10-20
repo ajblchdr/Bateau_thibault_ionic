@@ -1,0 +1,43 @@
+
+<ion-content [fullscreen]="true">
+ 
+<div class="banner">
+     <img  (click)="onGoToHome()" class="logo" src="../../assets/panier/homeLogo.png">
+    <img class="navbar" src="../../assets/panier/navbarbg.png">
+    <img  (click)="OngoToHome()" class="logo" src="../../assets/panier/cartLogo.png">
+ 
+</div>
+  
+        <ion-grid>
+          <ion-row >
+            <ion-col align-self-center>
+              <ion-card  expand="block" >
+                <img  id ="menu-img" src="../../assets/poisson.png"> Poisson </ion-card>
+            </ion-col>  
+          </ion-row>        
+        </ion-grid>
+
+       <ion-grid>
+          <ion-row>
+            <ion-col align-self-center>
+              <ion-card [routerLink]="['/']" expand="block">
+                <img  id ="menu-img" src="../../assets/ancre3x.png"> Crustacés </ion-card>
+          </ion-col>
+          </ion-row>
+          <ion-row>
+          <ion-col>
+            <ion-card [routerLink]="['/']" expand="block" >
+              <img  id ="menu-img" src="../../assets/restaurant.png"> Coquillages </ion-card>
+          </ion-col>  
+        </ion-row>        
+      
+
+      
+  <ion-row >
+    <ion-col>
+      <ion-card (click)="onGoToContact()" expand="block" >
+        <img  id ="menu-img" src="../../assets/poulpe3x.png"> Promotion </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid> 
+</ion-content>

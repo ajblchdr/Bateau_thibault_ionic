@@ -22,10 +22,13 @@ const routes: Routes = [
   {
     path: 'recette',
     loadChildren: () => import('./recette/recette.module').then( m => m.RecettePageModule)
+  },  {
+    path: 'produit',
+    loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
   },
-];
 
 ];
+
 
 @NgModule({
   imports: [
