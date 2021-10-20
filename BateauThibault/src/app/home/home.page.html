@@ -1,41 +1,53 @@
-<ion-app>
-  <ion-content padding>
-
-    <div>
-      <h1>Le bateau Thibault</h1>
-
-      <p>Vente en direct de notre bateau Produits selon la saison, Livraisons sur paris</p>
-      <p> 06.00.00.00.00</p>
-      <p>bateauthibault@gmail.com</p>
-      <p>www.facebook.com/lebateauthibault</p>
+<ion-content [fullscreen]="true">
+  <ion-col>
+    <div class="ion-text-center">
+      <h3>Le Bateau de Thibault</h3>
     </div>
+  </ion-col>
 
+  <ion-col>
+    <div id="des" class="ion-text-center">
+        <p>Vente en direct de bateau <br> Produit selon la saison, livraison sur Paris</p>
+
+      <div id="num" class="ion-text-center">
+        <p>06.63.99.99.78 <br>  lebataudethibau@gmail.com <br> www.facebook.com/lebateaudetibault</p>
+      </div>
+    </div>
+  </ion-col>
+  
         <ion-grid>
           <ion-row>
-            <ion-col>
-                <ion-button expand="full" ><ion-img [src]="../../assets/poisson.png"></ion-img> et promotions</ion-button>
-            </ion-col>
-          </ion-row>
-
-          <ion-row >
-            <ion-col>
-              <ion-button expand="full" ><img class="buttonIcon" src="../../assets/ancre.png"><ion-label>Bateaux</ion-label></ion-button>
-            </ion-col>
-            <ion-col>
-              <ion-button expand="full" ><img class="buttonIcon" src="../../assets/restaurant.png"><ion-label>Restaurants</ion-label></ion-button>
-            </ion-col>
-          </ion-row>
-
-          <ion-row >
-            <ion-col>
-              <ion-button  expand="full" ><img class="buttonIcon" src="../../assets/recette.png">Recettes</ion-button>
-            </ion-col>
-            <ion-col>
-              <ion-button  expand="full" ><img class="buttonIcon" src="../../assets/tourteau.png">Contact</ion-button>
-            </ion-col>
-          </ion-row>
-
+            <ion-col align-self-center>
+              <ion-button  expand="block" color="medium">
+                <img  id ="menu-img" src="../../assets/poisson.png"> Produit et promotion </ion-button>
+            </ion-col>  
+          </ion-row>        
         </ion-grid>
 
-  </ion-content>
-</ion-app>
+       <ion-grid>
+          <ion-row>
+            <ion-col align-self-center>
+              <ion-button [routerLink]="['/']" expand="block" color="medium">
+                <img  id ="menu-img" src="../../assets/ancre3x.png"> Bateaux </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button [routerLink]="['/']" expand="block" color="medium">
+              <img  id ="menu-img" src="../../assets/restaurant.png"> restaurant </ion-button>
+          </ion-col>  
+        </ion-row>        
+      </ion-grid>
+
+      
+  <ion-row >
+    <ion-col>
+      <ion-button (click)="onGoToRecette()" expand="block" color="medium">
+        <img  id ="menu-img" src="../../assets/recette2x.png"> Recette </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="onGoToContact()" expand="block" color="medium">
+        <img  id ="menu-img" src="../../assets/poulpe3x.png"> Contact </ion-button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>
