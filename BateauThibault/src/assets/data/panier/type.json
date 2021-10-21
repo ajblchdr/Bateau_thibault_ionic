@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [
     {
     "name":"poissons",
@@ -20,25 +19,3 @@
     }
     ]
 
-=======
-[
-    {
-    "name":"poissons",
-    "id":1
-    },
-    {
-        "name":"coquillages",
-        "id":2
-    }
-    ,
-    {
-        "name":"crustacés",
-        "id":3
-    },
-    {
-
-        "name":"promotion",
-        "id":4
-    }
-    ]
->>>>>>> 94e36f73092a12d87ffb73b269f01e7ce126c4e8
