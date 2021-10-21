@@ -1,12 +1,11 @@
-<ion-content padding>
-
-  <h1>Recettes</h1>
-
-  <ion-card *ngFor="let recette of recetteList" (click)="onLoadRecette(recette)" color="primary">
+<ion-content>
+  <ion-card color="primary">
     <ion-card-header>
       <ion-card-title>{{ recette.title }}</ion-card-title>
       <ion-img src="{{recette.img + '_icon.png'}}"></ion-img>
     </ion-card-header>
+    <ion-card-content>
+      {{ recette.Content }}
+    </ion-card-content>
   </ion-card>
-
 </ion-content>

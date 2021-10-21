@@ -47,6 +47,18 @@ const routes: Routes = [
     path: 'bateau-detail',
     loadChildren: () => import('./bateau-detail/bateau-detail.module').then( m => m.BateauDetailPageModule)
   },
+  {
+    path: 'recette-detail',
+    loadChildren: () => import('./recette-detail/recette-detail.module').then( m => m.RecetteDetailPageModule)
+  },
+  {
+    path: 'produit',
+    loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
+  },
+  {
+    path: 'produit-detail',
+    loadChildren: () => import('./produit-detail/produit-detail.module').then( m => m.ProduitDetailPageModule)
+  },
 
 ];
 

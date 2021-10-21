@@ -17,4 +17,8 @@ import { ProduitDetailPage } from './produit-detail.page';
   ],
   declarations: [ProduitDetailPage]
 })
+<<<<<<< HEAD
 export class ProduitDetailPageModule {}
+=======
+export class ProduitDetailPageModule {}
+>>>>>>> 94e36f73092a12d87ffb73b269f01e7ce126c4e8

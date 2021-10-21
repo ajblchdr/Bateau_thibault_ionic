@@ -21,4 +21,8 @@ describe('ProduitPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 94e36f73092a12d87ffb73b269f01e7ce126c4e8
