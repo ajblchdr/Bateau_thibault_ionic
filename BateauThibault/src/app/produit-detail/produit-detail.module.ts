@@ -8,11 +8,14 @@ import { ProduitDetailPageRoutingModule } from './produit-detail-routing.module'
 
 import { ProduitDetailPage } from './produit-detail.page';
 
+import { IonicStorageModule } from '@ionic/storage-angular';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    IonicStorageModule.forRoot(),
     ProduitDetailPageRoutingModule
   ],
   declarations: [ProduitDetailPage]
