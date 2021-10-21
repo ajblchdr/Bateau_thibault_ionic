@@ -2,11 +2,18 @@
 
   <h1>Les restaurants</h1>
 
-  <ion-card *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)" color="primary">
-    <ion-img src="{{restaurant.img + '_icon.png'}}"></ion-img>
-    <ion-card-header>
-      <ion-card-title>{{ restaurant.name }}</ion-card-title>
-    </ion-card-header>
+  <ion-card *ngFor="let restaurant of restaurantsList" (click)="onLoadRestaurant(restaurant)" >
+
+    <ion-card-content >
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">  <img class="presentationImage" src="{{restaurant.img + '_icon.png'}}"/></ion-col>
+          <ion-col >  <h1 > {{ restaurant.name }} </h1> </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
   </ion-card>
+
+
 
 </ion-content>
