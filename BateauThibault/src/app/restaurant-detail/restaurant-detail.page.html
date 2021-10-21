@@ -1,11 +1,28 @@
-<ion-content>
-  <ion-card color="primary">
-    <ion-img src="{{restaurant.img + '.png'}}"></ion-img>
-    <ion-card-header>
-      <ion-card-title>{{ restaurant.name }}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      {{ restaurant.description }}
+  <ion-content>
+  <ion-card >
+    <ion-card-content >
+      <ion-grid>
+        <ion-row>
+         
+          <ion-col>  <h1 class="midle"> {{ restaurant.name }} </h1> </ion-col>
+         
+        </ion-row>
+        <ion-row>
+           <ion-col> <ion-img src="{{restaurant.img + '.png'}}"></ion-img> </ion-col>
+        </ion-row>
+
+        <ion-row>
+    
+          <ion-col> <h2 class="midle"> Venez découvrir notre réstaurant partenaire : </h2> </ion-col>
+         </ion-row>
+
+        <ion-row>
+    
+         <ion-col> <p class="descriptionRestau">{{restaurant.description}}</p> </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
   </ion-card>
+
+  
 </ion-content>
