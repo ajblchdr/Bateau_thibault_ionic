@@ -63,6 +63,18 @@ export class ProduitDetailPage implements OnInit {
           }
         );
           break;
+          case 4:
+        console.log('test')
+        this.http.get('../../assets/data/panier/promo.json').subscribe(
+          (data) => {
+            console.log("data => ", data)
+            this.produitList = data;
+          },
+          (error) => {
+            console.log(error)
+          }
+        );
+          break;
   }
 }
 
