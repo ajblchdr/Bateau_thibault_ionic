@@ -21,4 +21,12 @@ export class HomePage {
   onGoToProduit(){
     this.router.navigate(['/produit']);
   }
+
+  onGoToRestaurantsList(){
+    this.router.navigate(['/restaurant-list'])
+  }
+
+  onGoToBateauxList(){
+    this.router.navigate(['/bateau-list'])
+  }
 }
