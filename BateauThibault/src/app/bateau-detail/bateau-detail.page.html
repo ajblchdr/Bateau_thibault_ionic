@@ -1,11 +1,20 @@
 <ion-content>
-  <ion-card color="primary">
-    <ion-img src="{{bateau.img + '.png'}}"></ion-img>
-    <ion-card-header>
-      <ion-card-title>{{ bateau.name }}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      {{ bateau.description }}
+  <ion-card >
+    <ion-card-content >
+      <ion-grid>
+        <ion-row>
+         
+          <ion-col>  <h1 class="midle"> {{ bateau.name }} </h1> </ion-col>
+         
+        </ion-row>
+        <ion-row style="align-items: center;">
+           <ion-col> <img class= "imageList" src="{{bateau.img + '.png'}}"/> </ion-col>
+        </ion-row>
+        <ion-row>
+    
+         <ion-col> <p class="descriptionRestau">{{bateau.description}}</p> </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
   </ion-card>
 </ion-content>
