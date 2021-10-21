@@ -1,0 +1,34 @@
+<ion-content padding>
+
+  <div class="bannerPanier">
+    <img   src="../../assets/panier/homeLogo.png" (click)="onGoToHome()"/>
+    
+    <img   style="position: fixed; top: 0; left: 50%;
+    transform: translateX(-50%);" src="../../assets/panier/navbarbg@2x.png"/>
+    
+    <img style="position: fixed;top: 0;right: 0;" src="../../assets/panier/cartLogo.png" (click)="onGoToCart()"/>
+    
+  </div>
+
+  <h1 class="titleProduct">Votre Panier</h1>
+
+  <ion-card *ngFor="let item of cartItems">
+    <ion-card-content >
+      <ion-grid>
+        <ion-row>
+          <ion-col size="2">  <img class="logo" src="../../assets/poulpe3x.png"/></ion-col>
+          <ion-col size="6">  <h1 class="midle"> {{ item.data.name }} </h1> </ion-col>
+          <ion-col size="2"> <h1>{{ item.data.prix}} €</h1></ion-col>
+          <ion-col size="2"> <ion-img src="../../assets/delete.png" (click)="deleteItemFromCart(item)"></ion-img></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-right">Total: {{ total }} €</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

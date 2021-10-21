@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Storage } from '@ionic/storage';
-import { __values } from 'tslib';
 @Component({
   selector: 'app-produit-detail',
   templateUrl: './produit-detail.page.html',
@@ -94,7 +93,6 @@ export class ProduitDetailPage implements OnInit {
 
   ngOnInit() {
     this.storage.create();
-    this.storage.clear();
   }
 
   addProduitToCart(produit){
@@ -116,9 +114,14 @@ export class ProduitDetailPage implements OnInit {
     });
     return uuid;
   }
-  
+
   onGoToHome(){
     this.router.navigate(['/home'])
+
+  }
+
+  onGoToCart(){
+    this.router.navigate(['/panier'])
 
   }
 

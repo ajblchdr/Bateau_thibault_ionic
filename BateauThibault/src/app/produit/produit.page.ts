@@ -47,4 +47,8 @@ export class ProduitPage implements OnInit {
   onGoToHome(){
     this.router.navigate(['/home']);
   }
+
+  onGoToCart(){
+    this.router.navigate(['/panier'])
+  }
 }
