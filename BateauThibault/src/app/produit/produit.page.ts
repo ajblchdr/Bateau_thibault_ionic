@@ -8,15 +8,13 @@ import { NavigationExtras, Router } from '@angular/router';
 })
 
 @Component({
-  selector: 'app-recette',
-  templateUrl: './recette.page.html',
-  styleUrls: ['./recette.page.scss'],
+  selector: 'app-produit',
+  templateUrl: './produit.page.html',
+  styleUrls: ['./produit.page.scss'],
 })
+export class ProduitPage implements OnInit {
 
-
-export class RecettePage implements OnInit {
-
-  recetteList: any;
+  produitList: any;
 
   constructor(public http: HttpClient, private router : Router) { }
 
@@ -25,25 +23,30 @@ export class RecettePage implements OnInit {
   }
 
   getDataFromJson(){
-    this.http.get('../../assets/data/recettes.json').subscribe(
+    this.http.get('../../assets/data/panier/type.json').subscribe(
       (data) => {
         console.log("data => ", data)
-        this.recetteList = data;
+        this.produitList = data;
       },
       (error) => {
         console.log(error)
       }
     );
   }
-onLoadRecette(recette){
+
+  onLoadProduit(produit){
 
     let navigationExtras : NavigationExtras = {
       state : {
-        recette: recette
+        produit: produit
       }
     };
-    this.router.navigate(['/recette-detail'], navigationExtras);
-
+    this.router.navigate(['/produit-detail'], navigationExtras);
   }
 
+
+  
+  onGoToHome(){
+    this.router.navigate(['/home']);
+  }
 }

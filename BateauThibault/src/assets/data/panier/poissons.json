@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Filet Bar de ligne",
+        "prix":7
+
+    },
+    {
+        "id":2,
+        "name":"Bar de ligne portion",
+        "prix":10
+
+    },
+    {
+        "id":3,
+        "name":"Aile de raie",
+        "prix":10
+
+    },
+    {
+        "id":4,
+        "name":"Lieu jaune de ligne",
+        "prix":12
+
+    },
+    {
+        "id":5,
+        "name":"Filet Julienne",
+        "prix":19
+
+    },
+    {
+        "id":6,
+        "name":"Bar de ligne",
+        "prix":30
+
+    }]

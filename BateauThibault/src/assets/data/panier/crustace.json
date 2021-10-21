@@ -1,0 +1,43 @@
+[
+    {
+        "id":1,
+        "name":"Araignées de mer",
+        "prix":14
+
+    },
+    {
+        "id":2,
+        "name":"Crevette",
+        "prix":8
+
+    },
+    {
+        "id":3,
+        "name":"Langoustine",
+        "prix":9.5
+
+    },
+    {
+        "id":4,
+        "name":" Crabe",
+        "prix":19
+
+    },
+    {
+        "id":5,
+        "name":"Homard",
+        "prix":24
+
+    },
+    {
+        "id":6,
+        "name":" Homar N°2 St Vast",
+        "prix":33
+
+    },
+    {
+        "id":7,
+        "name":" Homar N°3 OR St Vast",
+        "prix":48
+
+    }]

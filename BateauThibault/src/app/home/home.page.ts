@@ -16,7 +16,10 @@ export class HomePage {
   }
 
   onGoToRecette(){
-    this.router.navigate(['/recette'])
+    this.router.navigate(['/recette']);
+  }
+  onGoToProduit(){
+    this.router.navigate(['/produit']);
   }
 
   onGoToRestaurantsList(){
