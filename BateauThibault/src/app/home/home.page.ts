@@ -19,7 +19,6 @@ export class HomePage {
     this.router.navigate(['/recette']);
   }
   onGoToProduit(){
-    console.log("WESH MARCHE")
     this.router.navigate(['/produit']);
   }
 }

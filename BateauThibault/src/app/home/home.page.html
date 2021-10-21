@@ -25,8 +25,8 @@
                 <ion-card-content >
                   <ion-grid>
                     <ion-row>
-                      <ion-col size="2">  <img id ="menu-img" src="../../assets/poisson.png"> </ion-col>
-                      <ion-col size="4">  <h1 > Poissons et promossions </h1> </ion-col>
+                      <ion-col size="2">  <img class="menu-img" src="../../assets/poisson.png"> </ion-col>
+                      <ion-col >  <h1 > Poissons et promossions </h1> </ion-col>
                     </ion-row>
                   </ion-grid>
                 </ion-card-content>
@@ -40,12 +40,34 @@
        <ion-grid>
           <ion-row>
             <ion-col align-self-center>
-              <ion-card [routerLink]="['/']" expand="block" >
-                <img  id ="menu-img" src="../../assets/ancre3x.png"> Bateaux </ion-card>
+              <ion-card (click)="onGoToBateaux()"  expand="block">
+
+                <ion-card-content >
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col size="2">  <img class="menu-img" src="../../assets/ancre.png"> </ion-col>
+                      <ion-col size="6">  <h1 > Bateaux </h1> </ion-col>
+                    </ion-row>
+                  </ion-grid>
+                </ion-card-content>
+                
+              
+              </ion-card>
           </ion-col>
           <ion-col>
-            <ion-card [routerLink]="['/']" expand="block" color="medium">
-              <img  id ="menu-img" src="../../assets/restaurant.png"> restaurant </ion-card>
+            <ion-card (click)="onGoToRestaurant()"  expand="block">
+
+              <ion-card-content >
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="2">  <img id ="menu-img" src="../../assets/restaurant.png"> </ion-col>
+                    <ion-col size="8">  <h1 > Restaurant </h1> </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+              
+            
+            </ion-card>
           </ion-col>  
         </ion-row>        
       </ion-grid>
@@ -53,12 +75,34 @@
       
   <ion-row >
     <ion-col>
-      <ion-card (click)="onGoToRecette()" expand="block" color="medium">
-        <img  id ="menu-img" src="../../assets/recette2x.png"> Recette </ion-card>
+      <ion-card (click)="onGoToRecette()"  expand="block">
+
+        <ion-card-content >
+          <ion-grid>
+            <ion-row>
+              <ion-col size="2">  <img id ="menu-img" src="../../assets/recette2x.png"> </ion-col>
+              <ion-col size="8">  <h1 > Recette </h1> </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+        
+      
+      </ion-card>
     </ion-col>
     <ion-col>
-      <ion-card (click)="onGoToContact()" expand="block" color="medium">
-        <img  id ="menu-img" src="../../assets/poulpe3x.png"> Contact </ion-card>
+      <ion-card (click)="onGoToContact()"  expand="block">
+
+        <ion-card-content >
+          <ion-grid>
+            <ion-row>
+              <ion-col size="2">  <img id ="menu-img" src="../../assets/poulpe3x.png"> </ion-col>
+              <ion-col size="8">  <h1 > Contact </h1> </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+        
+      
+      </ion-card>
     </ion-col>
   </ion-row>
 

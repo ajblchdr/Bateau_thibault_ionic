@@ -2,17 +2,13 @@
     height: 75px;
     background-color:black;
 }
-.logo{
-    margin: 2%;
-    height: 25px;
-    width: 4%;
-}
-
 
 ion-content {
     --background: url(../../assets/background.png) no-repeat center/cover fixed;
 }
-
+ion-row{
+  height: 75;
+}
 .cardColor{
     background-color:rgba(2, 2, 19, 0.374);
 }

@@ -5,8 +5,31 @@
 :root {
 
   ion-card{
-    --ion-background-color : rgba(37, 37, 66, 0.455);
+    --ion-background-color : rgb(5, 120, 122);
   }
+  ion-content {
+    --background: url(../assets/background.png) no-repeat center/cover fixed;
+  }
+  .logo{
+
+    margin: 2%;
+    height: 100;
+    width: 100;
+}
+.midle{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+.titleProduct{
+  text-align: center;
+  color: #000000;
+  font-size: 25;
+}
+h1{
+  color: white;
+}
+  
   
   /** primary **/
   --ion-color-primary: #3880ff;
