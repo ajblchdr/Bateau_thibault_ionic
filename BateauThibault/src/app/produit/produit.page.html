@@ -1,13 +1,22 @@
 
 
 <ion-content padding>
+<div class="bannerPanier">
+<img    (click)="onGoToHome()" src="../../assets/panier/homeLogo.png"/>
 
+<img   style="position: fixed; top: 0; left: 50%;
+transform: translateX(-50%);" src="../../assets/panier/navbarbg@2x.png"/>
+
+
+<img style="position: fixed;top: 0;right: 0;" src="../../assets/panier/cartLogo.png"/>
+
+</div>
   <h1 class="titleProduct">Les Catégories</h1>
 
   <ion-card *ngFor="let produit of produitList" (click)="onLoadProduit(produit.id)" >
     <ion-card-content >
       <ion-grid>
-        <ion-row>
+        <ion-row >
           <ion-col size="2">  <img class="logo" src="../../assets/poulpe3x.png"/></ion-col>
           <ion-col >  <h1 class="midle"> {{ produit.name }} </h1> </ion-col>
         </ion-row>
