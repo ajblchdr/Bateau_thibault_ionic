@@ -41,7 +41,7 @@ export class ProduitDetailPage implements OnInit {
           break;
       case 2:
         console.log('test')
-        this.http.get('../../assets/data/panier/crustace.json').subscribe(
+        this.http.get('../../assets/data/panier/coquillage.json').subscribe(
           (data) => {
             console.log("data => ", data)
             this.produitList = data;
@@ -53,7 +53,19 @@ export class ProduitDetailPage implements OnInit {
           break;
       case 3:
         console.log('test')
-        this.http.get('../../assets/data/panier/coquillage.json').subscribe(
+        this.http.get('../../assets/data/panier/crustace.json').subscribe(
+          (data) => {
+            console.log("data => ", data)
+            this.produitList = data;
+          },
+          (error) => {
+            console.log(error)
+          }
+        );
+          break;
+          case 4:
+        console.log('test')
+        this.http.get('../../assets/data/panier/promo.json').subscribe(
           (data) => {
             console.log("data => ", data)
             this.produitList = data;
