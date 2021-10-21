@@ -81,4 +81,9 @@ export class ProduitDetailPage implements OnInit {
   ngOnInit() {
   }
 
+  onGoToHome(){
+    this.router.navigate(['/home'])
+
+  }
+
 }
