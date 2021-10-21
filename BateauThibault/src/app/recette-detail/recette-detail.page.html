@@ -1,11 +1,22 @@
 <ion-content>
-  <ion-card color="primary">
-    <ion-card-header>
-      <ion-card-title>{{ recette.title }}</ion-card-title>
-      <ion-img src="{{recette.img + '_icon.png'}}"></ion-img>
-    </ion-card-header>
+  <ion-card >
     <ion-card-content>
-      {{ recette.Content }}
+      <ion-grid>
+        <ion-row>
+         
+          <ion-col>  <h1 class="midle"> {{ recette.title }} </h1> </ion-col>
+         
+        </ion-row>
+        <ion-row>
+           <ion-col> <ion-img src="{{recette.img + '_icon.png'}}">  </ion-img></ion-col>
+        </ion-row>
+
+        <ion-row>
+    
+         <ion-col> <p class="descriptionRestau">{{recette.Content}}</p> </ion-col>
+        </ion-row>
+      </ion-grid>
+      
     </ion-card-content>
   </ion-card>
 </ion-content>

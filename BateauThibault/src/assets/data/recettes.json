@@ -2,7 +2,7 @@
     [
         {
             "id" : 1,
-            "title" : "Homard en chaud-froia",
+            "title" : "Homard en chaud-froid",
             "img" : "../../assets/recettes/homard",
             "Content" : "faites cuire les homard dans l'eau bouilland avec du thym, de laurier, du sel et du poivre de cayenne. Laissez cuire 20min. Gouttez les et laissez les refoidir Découpez les coffres des haumard dans le sens de la longueur, Mélangez la mayonnaise avec le cognac, le corail et les ciboulette cisellée"
         },
@@ -16,6 +16,6 @@
             "id" : 3,
             "title" : "Bar roti au laurier frais",
             "img" : "../../assets/recettes/bar",
-            "Content" : ""
+            "Content" : "A l'aide d'un écailleur, gratter le bar pour retirer les écailles, puis vider le ventre du poisson (ou le faire écailler et vider par votre poissonnier). et glisser le gros sel à l'intérieur. Inciser ensuite la peau pour pouvoir y glisser quelques feuilles de laurier frais."
         }
     ]
